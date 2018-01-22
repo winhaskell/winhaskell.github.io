@@ -1,194 +1,343 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* css Zen Garden submission 036 - 'White Lily' by Jens Kristensen, http://j-k.com/ */
+/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
+/* All associated graphics copyright 2003, Jens Kristensen */
 
-/* This file based on 'Tranquille' by Dave Shea */
+
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
+/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
+/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
+
+
 /* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
 
 /* basic elements */
-html {
+/*---------------------------------------------------*/
+
+body, html, div {
 	margin: 0;
 	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-
-/* specific divs */
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
 }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
+
+body { 
+	font: 8pt/16pt verdana, geneva, arial, sans serif; 
+	color: #000; 
+	background: #fff url(lbg.gif) repeat-y;
+
+}
+
+/* specific divs */
+
+/* container keeps it all together */
+/*---------------------------------------------------*/
+
+.page-wrapper{
+	border-top:1px solid #230;
+	border-right: 1px solid #230;
+	width:760px;
+	margin: 0px; 
+	padding: 0px; 
+	background: transparent url(topbg.gif) repeat-x;
+
+}
+
+/* intro div and its content */
+/*---------------------------------------------------*/
+
+.intro { 
+	margin:0;
+	padding:0;
+	margin-top:20px;
+	width:760px;
+	background: transparent url(lsh.gif) no-repeat 687px 231px;
+}
+
+header { 
+	position:absolute;
+	left:0;
+	width: 355px; 
+	height:201px
+
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+header h1 { 
+	background: transparent url(centerpiece.jpg) no-repeat; 
+	margin-top: 0px;
+	width: 355px; 
+	height: 201px; 
 	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
-
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
-
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
-
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
 
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
+}
+
+header h2 {
+	display:none;
+}
+
+.summary{
+	margin: 0 0 0 355px;
+	width:332px;
+	height: 200px;
+	background: #ABBC47 url(quicksumbg.gif);
+	border-right:1px solid #ABBC47;
+	border-top:1px solid #ABBC47;
+}
+
+.summary p:first-child {
+	font: bold 11px/14px arial,verdana, sans serif;
+	color:#fff; 
+	padding:100px 30px 2px 30px;
+}
+
+.summary p:last-child{
+	position:absolute;
+	left:0;
+	top:230px;
+	font: 10px verdana, arial, sans serif; 
+	color:#fff;
+	margin:0 30px;
+}
+
+/* visually footer is moved up to be with the intro stuff */
+
+footer{
+	position:absolute;
+	left:0;
+	top:230px;
+	font: 10px verdana, arial, sans serif; 
+	color:#fff;
+	margin:0 30px 0 400px;
+	width:340px;
+	text-align:right;
+}
+
+.summary p:last-child a, footer a{
+	color:#fff;
+}
+
+.summary p:last-child a:hover, footer a:hover{
+	color:#230;
+	background-color:#fff;
+	text-decoration:none;
+}
+
+/* visually we now move into the main area of the page
+/*---------------------------------------------------*/
+
+.preamble{
+	padding:50px 30px 30px 30px;
+	margin:30px 0 0 355px;
+	border-width:0 0 1px 1px;
+	border-color:#fff #ddd;
+	border-style:solid;
+	text-align:left;
+	background: transparent url(endsection.gif) no-repeat bottom center;
+
+	width:343px;
+}
+
+.preamble p, .explanation p, .benefits p, .participation p, .requirements p{
+	text-align:justify;
+}
+
+.preamble h3{
+	background: transparent url(h3preamble.gif) no-repeat bottom left; 
+	margin: 0px;
+	width: 270px; 
+	height: 36px;
+	border-bottom:1px solid #ddd;
 
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
+}
+.preamble p:nth-child(2){
+	width: 270px;
+}
+
+
+.supporting{
+	border-width:0 0 1px 1px;
+	border-color:#fff #ddd;
+	border-style:solid;
+	margin:0px 0px 0px 355px;
+	padding:50px 30px 0 30px;
+	width:405px;	
+	voice-family: "\"}\"";   
+	voice-family: inherit;
+	width:343px;
+	
+
+}
+
+.explanation, .benefits, .participation, .requirements {
+	padding:0 0 20px 0;
+	margin-bottom:20px;
+	text-align:left;
+	background: transparent url(endsection.gif) no-repeat bottom center;
+}
+
+p{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+p:nth-child(2){
+	margin-top:26px;
+}
+
+.summary p:first-child{
+	margin-top:0;
+}
+
+/* use images to display headers */
+
+.explanation h3{
+	background: transparent url(h3explanation.gif) no-repeat bottom left; 
+}
+.benefits h3{
+	background: transparent url(h3benefits.gif) no-repeat bottom left; 
+}
+.participation h3{
+	background: transparent url(h3participation.gif) no-repeat bottom left; 
+}
+.requirements h3{
+	background: transparent url(h3requirements.gif) no-repeat bottom left; 
+}
+	
+.explanation h3, .benefits h3, .participation h3, .requirements h3 {
+	margin: 0px;
+	min-width: 200px; 
+	height: 36px;
+	border-bottom:1px solid #ddd;
 
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
-	}
+}
 
+/* and finally we place the list of links */
+/*---------------------------------------------------*/
 
-.sidebar ul {
-	margin: 0;
+.sidebar{
+	position:absolute;
+	left:0px;
+	top:252px;
+	width:355px;
+	padding:50px 30px 0 130px;
+	background: transparent url(lsh.gif) no-repeat top left;
+	voice-family: "\"}\"";   
+	voice-family: inherit;
+	width:195px;
+}
+
+.sidebar .wrapper{
 	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+/* use images for headers */
+
+h3.select{
+	background: transparent url(h3select.gif) no-repeat bottom left; 
+}
+h3.archives{
+	background: transparent url(h3archives.gif) no-repeat bottom left; 
+}
+h3.resources{
+	background: transparent url(h3resources.gif) no-repeat bottom left; 
+}
+
+h3.select, h3.archives, h3.resources {
+	margin: 0px;
+	min-width: 200px; 
+	height: 36px;
+	border-bottom:1px solid #ddd;
+
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* put some style on the lists */
+
+/* first the list of designs */
+.design-selection ul {
+	margin: 10px 0 0 0;
+	padding: 10px;
+}
+
+.design-selection li {
+	line-height: 2.5ex; 
 	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+	display: block; 
+	padding: 5px 0px 5px 25px; 
+	margin: 5px 0;
+	border-bottom:1px solid #eee;
+	background: transparent url(bullet.gif) no-repeat 0px 7px;
+}
 
+.design-selection li a{
+	white-space:nowrap;
+	display:block;
+	font-weight:bold;
+}
 
-.extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+.design-selection li a.designer-name{
+	text-decoration:none;
+	display:inline;
+	font-weight:normal;
+}
+
+.design-selection li a.designer-name:hover{
+	text-decoration:underline;
+}
+
+/* then the lists of general info etc */
+
+.design-archives ul, .zen-resources ul {
+	margin: 10px 0 0 0;
+	padding: 10px;
+}
+
+.design-archives li, .zen-resources li { 
+	list-style-type: none;
+	display: block; 
+	padding: 0px; 
+	padding: 0px 0px 0px 25px;
+	margin: 0;
+	background: transparent url(bullet2.gif) no-repeat 2px 7px;
+}
+
+/* some generic stuff */
+/*---------------------------------------------------*/
+
+a {
+	color:#230;
+}
+
+a:visited {
+	color:#672;
+}
+
+a:hover {
+	color:#ABBC47;
+}
+
+/* and finally we use one of the extra divs available */
+/*---------------------------------------------------*/
+
+.extra1{
+	width:3px;
+	height:18px;
+	position:absolute;
+	left:354px;
+	top:252px;
+	background: transparent url(ltop.gif) no-repeat;
+}
