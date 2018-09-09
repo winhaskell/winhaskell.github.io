@@ -68,7 +68,7 @@ header h1 {
 	margin-top: 10px;
 	display: block;
 	width: 600px;
-	height: 400px;
+	height: 300px;
 	float: left;
 
 	text-indent: 100%;
@@ -80,7 +80,7 @@ header h2 {
 	margin-top: 58px; 
 	margin-bottom: 40px; 
 	width: 600px; 
-	height: 400px; 
+	height: 200px; 
 	float: right;
 
 	text-indent: 100%;
