@@ -64,11 +64,11 @@ abbr {
 	}
 
 header h1 { 
-	background: transparent url(https://raw.githubusercontent.com/winhaskell/winhaskell.github.io/master/2018/09/24/OCaml/ocamlk.gif) no-repeat top left;
+	background: transparent url() no-repeat top left;
 	margin-top: 10px;
 	display: block;
 	width: 219px;
-	height: 166px;
+	height: 111px;
 	float: left;
 
 	text-indent: 100%;
