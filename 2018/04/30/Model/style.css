@@ -64,11 +64,11 @@ abbr {
 	}
 
 header h1 { 
-	background: transparent url() no-repeat top left;
+	background: transparent url(https://raw.githubusercontent.com/winhaskell/winhaskell.github.io/master/2018/04/30/Model/cmu-official-seal.png) no-repeat top left;
 	margin-top: 10px;
 	display: block;
 	width: 219px;
-	height: 87px;
+	height: 200px;
 	float: left;
 
 	text-indent: 100%;
@@ -76,7 +76,7 @@ header h1 {
 	overflow: hidden;
 	}
 header h2 { 
-	background: transparent url(https://raw.githubusercontent.com/winhaskell/winhaskell.github.io/master/2018/04/30/Model/cmu-official-seal.png) no-repeat top left; 
+	background: transparent url() no-repeat top left; 
 	margin-top: 58px; 
 	margin-bottom: 40px; 
 	width: 200px; 
