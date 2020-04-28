@@ -1,194 +1,276 @@
-/* css Zen Garden default style v1.02 */
+/* css Zen Garden submission 211 - 'Orchid Beauty', by Kevin Addison, http://www.kevinaddison.com/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+/* All associated graphics copyright 2006, Kevin Addison */
 
 
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
 
 
-/* specific divs */
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
 
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
 
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
+/* Orchid Beauty Style Sheet */
+/* --------------------------*/
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+a:link {
+	color: #6D2542;
+	text-decoration: none;
 	}
-header {
-	padding-top: 20px;
-	height: 87px;
+a:visited {
+	color: #999999;
+	text-decoration: none;
+	}
+a:hover {
+	color: #999999;
+	text-decoration: underline;
+	}
+a:active {
+	color: #999999;
+	text-decoration: none;
+	} 
+
+body {
+margin:0 0 0 0;
+padding:0 0 0 0;
 }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
 
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
+.page-wrapper {
+width:630px;
+margin: auto;
+padding: 0 0 100px 0;
+background-image:url(rounded.jpg);
+background-repeat: no-repeat;
+background-position:bottom;
+border:0px dotted #999999;
+position:relative;
+}
 
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+header {
+background: transparent url(header.jpg) no-repeat center top;
+border:0px dotted #999999;
+width:630px;
+height:387px;
+}
+
+.intro {
+width:400px;
+margin:0 0 0 0;
+border:0px dotted #999999;
+}
+
+.summary p:last-child {
+border:0px solid #000000;
+margin:-110px 0 95px 288px;
+padding: 0 0 0 15px;
+text-transform: uppercase;
+width:290px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:10px;
+font-weight:normal;
+color:#999999;
+background: transparent url(bullet.jpg) no-repeat 0% 28%;
+}
+
+.supporting {
+width:350px;
+margin:0 0 0 0;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+border-bottom:0px dotted #999999;
+position:relative;
+width:350px;
+margin:0 0 0 60px;
+}
+
+.requirements {
+margin-bottom:35px;
+}
+
+.preamble h3 {
+background-image: url(title01.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:64px;
+margin-bottom:-5px;
+}
+
+.explanation h3 {
+background-image: url(title02.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:66px;
+margin-bottom:-5px;
+}
+
+.participation h3 {
+background-image: url(title03.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:66px;
+margin-bottom:-5px;
+}
+
+.benefits h3 {
+background-image: url(title04.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:66px;
+margin-bottom:-5px;
+}
+
+.requirements h3 {
+background-image: url(title05.jpg);
+background-repeat: no-repeat;
+background-position: left top;
+width:286px;
+height:66px;
+margin-bottom:-5px;
+}
+
+header h1, header h2, .summary p:first-child {
+display:none;
+}
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+}
+
+p {
+color: #999999;
+font-size:11px;
+font-weight:normal;
+line-height:1.4em;
+font-family: Geneva, Arial, Helvetica, sans-serif;
+}
 
 .sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
+position: absolute;
+left:160px; 
+right:auto; 
+top: 400px;
+padding:0 0 0 0;
+margin-left: 270px;
+width: 180px;
+border:0px dotted #666666;
+background: transparent url(orchid.jpg) no-repeat bottom;
+height:810px;
+}
 
 .sidebar ul {
+	text-align: left;
+	list-style: none;
+	margin: 0 0 0 0;
+	padding:0 0 15px 35px;
+	font-size:10px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	border:0px dotted #666666;
+	width:120px;
+	}
+
+.sidebar ul li{
 	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
+	padding: 3px 0 3px 0;
+	border-bottom: 1px dotted #999999;
+}
+
+.sidebar ul li a, .sidebar ul li a:visited {
+	border-bottom: none;
+	outline:0;
+}
+
+.sidebar ul li a:hover {
+	color: #999999;
+	text-decoration: underline;
+}
+
+.design-selection {
+	font-size: 0.9em;
+}
+
+.design-selection ul li {
+	padding: 3px 0 3px 20px;
+	background: transparent url(bullet.jpg) no-repeat 2% 25%;
+	color:#999999;
+}
+
+.design-selection a {
+	display: block;
+	font-size: 1.1em;
+	color: #6D2542;
+}
+
+.design-selection a.designer-name {
+	display:inline;
+	line-height:5px;
+	margin:0;
+	padding:0;
+	font: normal 1.0em/0.9em Geneva, Arial, Tahoma, sans-serif;
+	color: #999999;
+	letter-spacing: -1px;
+}
+
+.design-selection, .design-archives {
 	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+	border:0px solid #000000;
+}
 
+.design-archives ul li a, .zen-resources ul li a {
+color:#6D2542;
+}
 
-.extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+.design-selection h3, .design-archives h3, .zen-resources h3 {
+	width: 196px;
+	height: 40px;
+	margin-bottom:-20px;
+	padding:10px 0 0 35px;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	text-transform: uppercase;
+	color:#999999;
+}
+
+footer{
+	text-align: left;
+	padding:0 0 0 0;
+	margin:0 0 0 60px;
+}
+
+footer a, footer a:visited {
+	padding: 5px;
+	border: 1px solid #eeeeee;
+	background-color: #fff;
+	color: #666666;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+
+footer a:hover {
+	padding: 5px;
+	border: 1px solid #eeeeee;
+	background-color: #eeeeee;
+	color: #999999;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	text-decoration: none;
+}
+
+.extra1, .extra2, .extra3, .extra4, .extra5, .extra6{
+display:none;
+}
