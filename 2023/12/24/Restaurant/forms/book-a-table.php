@@ -15,17 +15,17 @@
     die( 'Unable to load the "PHP Email Form" Library!');
   }
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
+  $book_a_table = new PHP_Email_Form;
+  $book_a_table->ajax = true;
   
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+  $book_a_table->to = $receiving_email_address;
+  $book_a_table->from_name = $_POST['name'];
+  $book_a_table->from_email = $_POST['email'];
+  $book_a_table->subject = "New table booking request from the website";
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
-  $contact->smtp = array(
+  $book_a_table->smtp = array(
     'host' => 'example.com',
     'username' => 'example',
     'password' => 'pass',
@@ -33,9 +33,13 @@
   );
   */
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+  $book_a_table->add_message( $_POST['name'], 'Name');
+  $book_a_table->add_message( $_POST['email'], 'Email');
+  $book_a_table->add_message( $_POST['phone'], 'Phone', 4);
+  $book_a_table->add_message( $_POST['date'], 'Date', 4);
+  $book_a_table->add_message( $_POST['time'], 'Time', 4);
+  $book_a_table->add_message( $_POST['people'], '# of people', 1);
+  $book_a_table->add_message( $_POST['message'], 'Message');
 
-  echo $contact->send();
+  echo $book_a_table->send();
 ?>
