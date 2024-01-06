@@ -66,16 +66,14 @@ abbr {
 
 header h1 { 
 	background: transparent url(https://raw.githubusercontent.com/winhaskell/winhaskell.github.io/master/2024/01/01/Niklaus%20Wirth/abdcmed.png) no-repeat top left;
-	margin-top: 10px;
+	 
 	display: block;
-	width: 219px;
-	height: 87px;
+	 
 	float: left;
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+	 
 	}
+
 header h2 { 
 	background: transparent url() no-repeat top left; 
 	margin-top: 58px; 
