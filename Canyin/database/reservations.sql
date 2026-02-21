@@ -1,0 +1,9 @@
+id
+name
+phone
+date
+time
+guests
+notes
+status
+createdAt
