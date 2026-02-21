@@ -1,1 +1,493 @@
-ppp
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝摆哥炒饭 - 用心炒好每一碗饭</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&family=Noto+Serif+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B35',
+                        secondary: '#F7931E',
+                        accent: '#FFC857',
+                        warm: '#FFE5B4',
+                        dark: '#2C3E50'
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans SC', 'sans-serif'],
+                        serif: ['Noto Serif SC', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50 top-0">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="text-3xl">🍚</div>
+                    <h1 class="text-2xl font-bold text-primary font-serif">绝摆哥炒饭</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary transition">首页</a>
+                    <a href="#menu" class="nav-link text-gray-700 hover:text-primary transition">菜单</a>
+                    <a href="#order" class="nav-link text-gray-700 hover:text-primary transition">在线点餐</a>
+                    <a href="#reservation" class="nav-link text-gray-700 hover:text-primary transition">预订</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary transition">关于我们</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary transition">联系我们</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="cartBtn" class="relative text-gray-700 hover:text-primary transition">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span id="cartCount" class="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center hidden">0</span>
+                    </button>
+                    <button id="menuToggle" class="md:hidden text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-primary transition">首页</a>
+                <a href="#menu" class="block py-2 text-gray-700 hover:text-primary transition">菜单</a>
+                <a href="#order" class="block py-2 text-gray-700 hover:text-primary transition">在线点餐</a>
+                <a href="#reservation" class="block py-2 text-gray-700 hover:text-primary transition">预订</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-primary transition">关于我们</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-primary transition">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section pt-20">
+        <div class="relative h-screen flex items-center justify-center overflow-hidden">
+            <div class="hero-bg absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent opacity-90"></div>
+            <div class="hero-pattern absolute inset-0 opacity-10"></div>
+            <div class="relative z-10 text-center text-white px-6">
+                <div class="animate-fade-in">
+                    <div class="text-7xl mb-6">🍚</div>
+                    <h1 class="text-5xl md:text-7xl font-bold font-serif mb-6 drop-shadow-lg">绝摆哥炒饭</h1>
+                    <p class="text-xl md:text-2xl mb-4 font-medium">用心炒好每一碗饭</p>
+                    <p class="text-lg md:text-xl mb-12 opacity-90">传承经典 · 创新口味 · 匠心独运</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#order" class="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-utensils mr-2"></i>立即点餐
+                        </a>
+                        <a href="#menu" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition transform hover:scale-105">
+                            <i class="fas fa-book-open mr-2"></i>查看菜单
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i class="fas fa-chevron-down text-white text-3xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-lg hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="text-5xl mb-4">🔥</div>
+                    <h3 class="text-2xl font-bold mb-4 text-dark">现炒现做</h3>
+                    <p class="text-gray-600">每份炒饭都是现场新鲜炒制，保证最佳口感和温度</p>
+                </div>
+                <div class="text-center p-8 rounded-lg hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="text-5xl mb-4">🌾</div>
+                    <h3 class="text-2xl font-bold mb-4 text-dark">优质食材</h3>
+                    <p class="text-gray-600">精选东北优质大米，新鲜食材每日采购</p>
+                </div>
+                <div class="text-center p-8 rounded-lg hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="text-5xl mb-4">💯</div>
+                    <h3 class="text-2xl font-bold mb-4 text-dark">匠心工艺</h3>
+                    <p class="text-gray-600">传承传统炒饭技艺，每一颗米粒都粒粒分明</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark mb-4 font-serif">招牌菜单</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600">精选炒饭，款款经典</p>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="menu-category-btn active px-6 py-3 rounded-full font-semibold transition" data-category="all">
+                    全部菜品
+                </button>
+                <button class="menu-category-btn px-6 py-3 rounded-full font-semibold transition" data-category="signature">
+                    招牌系列
+                </button>
+                <button class="menu-category-btn px-6 py-3 rounded-full font-semibold transition" data-category="seafood">
+                    海鲜系列
+                </button>
+                <button class="menu-category-btn px-6 py-3 rounded-full font-semibold transition" data-category="meat">
+                    肉类系列
+                </button>
+                <button class="menu-category-btn px-6 py-3 rounded-full font-semibold transition" data-category="vegetable">
+                    素菜系列
+                </button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div id="menuGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Menu items will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark mb-4 font-serif">在线点餐</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600">选择您喜欢的美食，我们即刻为您准备</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto">
+                <div id="orderGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <!-- Order items will be loaded here -->
+                </div>
+
+                <!-- Cart Summary -->
+                <div id="cartSummary" class="hidden bg-white rounded-lg shadow-lg p-6 sticky bottom-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold text-dark">购物车</h3>
+                        <button id="clearCart" class="text-red-500 hover:text-red-700">
+                            <i class="fas fa-trash"></i> 清空
+                        </button>
+                    </div>
+                    <div id="cartItems" class="space-y-3 mb-4 max-h-64 overflow-y-auto">
+                        <!-- Cart items will be shown here -->
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between items-center text-xl font-bold mb-4">
+                            <span>总计：</span>
+                            <span class="text-primary">¥<span id="cartTotal">0</span></span>
+                        </div>
+                        <button id="checkoutBtn" class="w-full bg-primary text-white py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition">
+                            <i class="fas fa-check-circle mr-2"></i>提交订单
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 font-serif">在线预订</h2>
+                    <div class="w-24 h-1 bg-white mx-auto mb-4"></div>
+                    <p class="text-xl">提前预订，享受更好的用餐体验</p>
+                </div>
+
+                <form id="reservationForm" class="bg-white rounded-lg shadow-2xl p-8 text-gray-800">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">姓名 *</label>
+                            <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">电话 *</label>
+                            <input type="tel" name="phone" required pattern="[0-9]{11}" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">日期 *</label>
+                            <input type="date" name="date" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">时间 *</label>
+                            <select name="time" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                                <option value="">选择时间</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold mb-2">人数 *</label>
+                        <select name="guests" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">
+                            <option value="">选择人数</option>
+                            <option value="1">1人</option>
+                            <option value="2">2人</option>
+                            <option value="3">3人</option>
+                            <option value="4">4人</option>
+                            <option value="5">5人</option>
+                            <option value="6">6人</option>
+                            <option value="7-10">7-10人</option>
+                            <option value="10+">10人以上</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold mb-2">备注</label>
+                        <textarea name="notes" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50" placeholder="特殊需求或其他说明..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition transform hover:scale-105">
+                        <i class="fas fa-calendar-check mr-2"></i>确认预订
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-dark mb-4 font-serif">关于绝摆哥</h2>
+                    <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <div class="text-8xl mb-6">👨‍🍳</div>
+                        <h3 class="text-3xl font-bold mb-4 text-dark">品牌故事</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            "绝摆哥"创始于2020年，源于创始人对传统炒饭的热爱与执着。"绝摆"在方言中意为"真不错"、"非常好"，我们用这个名字表达对品质的追求。
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            创始人阿强师傅从小跟随外公学习炒饭技艺，经过多年钻研，将传统工艺与现代口味完美结合，创造出独具特色的"绝摆哥"系列炒饭。
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            我们坚持使用优质食材，每一份炒饭都现场炒制，确保每位顾客都能品尝到热腾腾、香喷喷的美味炒饭。
+                        </p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-primary to-secondary text-white p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl mb-2">🏆</div>
+                            <h4 class="text-xl font-bold mb-2">荣誉认证</h4>
+                            <p>2023年度最受欢迎炒饭店</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-secondary to-accent text-white p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl mb-2">⭐</div>
+                            <h4 class="text-xl font-bold mb-2">顾客好评</h4>
+                            <p>平均评分4.8/5.0，超过10000+好评</p>
+                        </div>
+                        <div class="bg-gradient-to-r from-accent to-primary text-white p-6 rounded-lg shadow-lg">
+                            <div class="text-4xl mb-2">🌟</div>
+                            <h4 class="text-xl font-bold mb-2">品质承诺</h4>
+                            <p>100%新鲜食材，现炒现做</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-warm p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-dark text-center">我们的理念</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <div class="text-4xl mb-3">🍚</div>
+                            <h4 class="font-bold text-lg mb-2 text-dark">匠心品质</h4>
+                            <p class="text-gray-700">每一碗炒饭都是艺术品</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl mb-3">❤️</div>
+                            <h4 class="font-bold text-lg mb-2 text-dark">用心服务</h4>
+                            <p class="text-gray-700">顾客满意是我们的追求</p>
+                        </div>
+                        <div>
+                            <div class="text-4xl mb-3">🌈</div>
+                            <h4 class="font-bold text-lg mb-2 text-dark">创新口味</h4>
+                            <p class="text-gray-700">传承经典，勇于创新</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark mb-4 font-serif">联系我们</h2>
+                <div class="w-24 h-1 bg-primary mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600">欢迎到店品尝或来电咨询</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <div class="bg-white rounded-lg shadow-lg p-8 mb-6">
+                        <h3 class="text-2xl font-bold mb-6 text-dark">店铺信息</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-primary text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">地址</h4>
+                                    <p class="text-gray-600">上海市黄浦区南京东路123号美食广场2楼</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone text-primary text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">电话</h4>
+                                    <p class="text-gray-600">021-12345678</p>
+                                    <p class="text-gray-600">138-1234-5678（外卖热线）</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-primary text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">营业时间</h4>
+                                    <p class="text-gray-600">周一至周日</p>
+                                    <p class="text-gray-600">11:00 - 14:00（午市）</p>
+                                    <p class="text-gray-600">17:00 - 21:00（晚市）</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-primary text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="font-semibold mb-1">邮箱</h4>
+                                    <p class="text-gray-600">info@juebaige.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-dark">关注我们</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-80 transition">
+                                <i class="fab fa-weixin text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-80 transition">
+                                <i class="fab fa-weibo text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-80 transition">
+                                <i class="fab fa-qq text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-opacity-80 transition">
+                                <i class="fab fa-douyin text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map -->
+                <div>
+                    <div class="bg-white rounded-lg shadow-lg p-4 h-full">
+                        <div id="map" class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+                            <div class="text-center text-gray-500">
+                                <i class="fas fa-map-marked-alt text-6xl mb-4"></i>
+                                <p class="text-lg">地图加载中...</p>
+                                <p class="text-sm mt-2">上海市黄浦区南京东路123号</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 font-serif">绝摆哥炒饭</h3>
+                    <p class="text-gray-400">用心炒好每一碗饭</p>
+                    <p class="text-gray-400 mt-2">传承经典 · 创新口味 · 匠心独运</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#menu" class="text-gray-400 hover:text-white transition">菜单</a></li>
+                        <li><a href="#order" class="text-gray-400 hover:text-white transition">在线点餐</a></li>
+                        <li><a href="#reservation" class="text-gray-400 hover:text-white transition">在线预订</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">关于我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">联系方式</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>021-12345678</li>
+                        <li><i class="fas fa-mobile-alt mr-2"></i>138-1234-5678</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@juebaige.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 绝摆哥炒饭. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold text-dark">购物车</h3>
+                    <button id="closeCartModal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times text-2xl"></i>
+                    </button>
+                </div>
+                <div id="cartModalContent" class="space-y-4 mb-6">
+                    <!-- Cart items will be displayed here -->
+                </div>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between items-center text-xl font-bold mb-4">
+                        <span>总计：</span>
+                        <span class="text-primary">¥<span id="cartModalTotal">0</span></span>
+                    </div>
+                    <button id="cartModalCheckout" class="w-full bg-primary text-white py-4 rounded-lg font-bold text-lg hover:bg-opacity-90 transition">
+                        <i class="fas fa-check-circle mr-2"></i>提交订单
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-md w-full p-8 text-center">
+            <div class="text-6xl mb-4">✅</div>
+            <h3 class="text-2xl font-bold mb-4 text-dark">订单提交成功！</h3>
+            <p class="text-gray-600 mb-6">我们已收到您的订单，正在为您准备美食...</p>
+            <button id="closeSuccessModal" class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-opacity-90 transition">
+                确定
+            </button>
+        </div>
+    </div>
+
+    <script src="js/menu-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
