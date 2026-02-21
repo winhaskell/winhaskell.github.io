@@ -1,1 +1,9 @@
-a
+id
+items
+total
+orderTime
+status
+customerName
+customerPhone
+deliveryAddress
+notes
