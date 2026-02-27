@@ -150,7 +150,7 @@ function addToCart(itemId) {
     
     updateCart();
     saveCartToStorage();
-    showToast('success', `已添加 ${item.name} 到我的点餐`);
+    showToast('success', `已添加 ${item.name} 到 我的点餐`);
 }
 
 // Update Cart Display
