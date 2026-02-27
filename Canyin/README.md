@@ -1,4 +1,4 @@
-# 绝摆哥炒饭 - 餐饮店网站
+# 绝摆炒饭哥 - 餐饮店网站
 
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
