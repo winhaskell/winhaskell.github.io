@@ -105,7 +105,7 @@ function createMenuCard(item) {
                     <span class="menu-card-price">¥${item.price}</span>
                     <button class="add-to-cart-btn" data-id="${item.id}">
                         <i class="fas fa-plus"></i>
-                        <span>加入购物车</span>
+                        <span>加入我的点餐</span>
                     </button>
                 </div>
             </div>
@@ -150,7 +150,7 @@ function addToCart(itemId) {
     
     updateCart();
     saveCartToStorage();
-    showToast('success', `已添加 ${item.name} 到购物车`);
+    showToast('success', `已添加 ${item.name} 到我的点餐`);
 }
 
 // Update Cart Display
@@ -179,7 +179,7 @@ function updateCart() {
     // Update cart items display
     const cartHTML = cart.length > 0 
         ? cart.map(item => createCartItemHTML(item)).join('') 
-        : '<p class="text-gray-500 text-center py-4">购物车是空的</p>';
+        : '<p class="text-gray-500 text-center py-4">我的点餐是空的</p>';
     
     if (cartItems) {
         cartItems.innerHTML = cartHTML;
@@ -278,7 +278,7 @@ function removeFromCart(itemId) {
     cart = cart.filter(i => i.id !== itemId);
     updateCart();
     saveCartToStorage();
-    showToast('info', '已从购物车移除');
+    showToast('info', '已从我的点餐移除');
 }
 
 // Setup Cart Functionality
@@ -317,11 +317,11 @@ function setupCartFunctionality() {
     const clearCartBtn = document.getElementById('clearCart');
     if (clearCartBtn) {
         clearCartBtn.addEventListener('click', () => {
-            if (confirm('确定要清空购物车吗？')) {
+            if (confirm('确定要清空我的点餐吗？')) {
                 cart = [];
                 updateCart();
                 saveCartToStorage();
-                showToast('info', '购物车已清空');
+                showToast('info', '我的点餐已清空');
             }
         });
     }
@@ -342,7 +342,7 @@ function setupCartFunctionality() {
 // Handle Checkout
 async function handleCheckout() {
     if (cart.length === 0) {
-        showToast('error', '购物车是空的');
+        showToast('error', '我的点餐是空的');
         return;
     }
     
