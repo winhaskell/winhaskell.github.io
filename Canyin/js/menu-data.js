@@ -34,11 +34,11 @@ const menuData = [
     // 海鲜系列
     {
         id: 4,
-        name: "海鲜至尊炒饭",
+        name: "鸭血粉丝汤",
         category: "seafood",
         price: 45,
-        description: "精选大虾、鲜鱿、扇贝，搭配秘制酱汁，海鲜爱好者必选",
-        image: "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=500&q=80",
+        description: "鸭血，粉丝，鸭杂，油豆腐泡，鸭汤，香菜，葱花，榨菜",
+        image: "img/yxfst.jpg",
         badge: "hot"
     },
     {
