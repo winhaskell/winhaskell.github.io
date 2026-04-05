@@ -111,14 +111,14 @@ const menuData = [
         image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=80"
     },
 
-    // 素菜系列
+    // 素菜系列-饮料啤酒
     {
         id: 13,
-        name: "什锦蔬菜炒饭",
+        name: "雪碧可乐",
         category: "vegetable",
-        price: 25,
-        description: "多种时令蔬菜，色彩缤纷，清淡健康",
-        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80"
+        price: 4,
+        description: "透心凉，渴释放",
+        image: "img/cola.jpg"
     },
     {
         id: 14,
