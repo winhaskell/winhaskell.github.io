@@ -17,7 +17,7 @@ const menuData = [
         category: "signature",
         price: 32,
         description: "酸菜、卤肥肠、米饭、鸡蛋，配蒜末与葱花大火翻炒，咸香微酸",
-        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80",
+        image: "img/bg-1.png",
         badge: "signature",
         hot: true
     },
