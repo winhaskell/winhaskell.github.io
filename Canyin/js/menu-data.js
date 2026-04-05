@@ -3,9 +3,9 @@ const menuData = [
     // 招牌系列
     {
         id: 1,
-        name: "绝摆哥黄金炒饭",
+        name: "五彩虾仁炒饭",
         category: "signature",
-        price: 28,
+        price: 30,
         description: "招牌必点！选用优质大米，搭配新鲜鸡蛋，粒粒分明，金黄诱人",
         image: "img/bg-1.png",
         badge: "signature",
@@ -13,19 +13,19 @@ const menuData = [
     },
     {
         id: 2,
-        name: "扬州经典炒饭",
+        name: "酸菜肥肠炒饭",
         category: "signature",
         price: 32,
-        description: "传承经典扬州炒饭工艺，虾仁、火腿、青豆、胡萝卜完美搭配",
+        description: "酸菜、卤肥肠、米饭、鸡蛋，配蒜末与葱花大火翻炒，咸香微酸",
         image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80",
         badge: "signature",
         hot: true
     },
     {
         id: 3,
-        name: "绝摆特色三鲜炒饭",
+        name: "招牌六鲜炒饭",
         category: "signature",
-        price: 35,
+        price: 33,
         description: "虾仁、鱿鱼、蟹肉棒三鲜组合，鲜香四溢，回味无穷",
         image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500&q=80",
         badge: "signature"
