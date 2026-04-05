@@ -26,7 +26,7 @@ const menuData = [
         name: "招牌六鲜炒饭",
         category: "signature",
         price: 33,
-        description: "虾仁、鱿鱼、蟹肉棒三鲜组合，鲜香四溢，回味无穷",
+        description: "甄选虾仁、鸡蛋、火腿、青豆、玉米与香菇，大火快炒，粒粒分明、鲜香浓郁",
         image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500&q=80",
         badge: "signature"
     },
