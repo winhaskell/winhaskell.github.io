@@ -46,7 +46,7 @@ const menuData = [
         name: "青菜豆腐汤",
         category: "seafood",
         price: 16,
-        description: "青菜、豆腐、食用油、盐",
+        description: "青菜，豆腐，食用油，盐",
         image: "img/qcdft.jpg"
         
     },
@@ -55,17 +55,17 @@ const menuData = [
         name: "冬瓜排骨汤",
         category: "seafood",
         price: 28,
-        description: "冬瓜，排骨，香油、葱、姜、花椒、食盐、味精各适量",
+        description: "冬瓜，排骨，香油，葱，姜，花椒，食盐各适量",
         image: "img/dgpgt.jpg",
         badge: "new"
         
     },
     {
         id: 7,
-        name: "三文鱼炒饭",
+        name: "皮肚三鲜汤",
         category: "seafood",
-        price: 48,
-        description: "进口三文鱼配特制酱油，营养美味，高端享受",
+        price: 21,
+        description: "皮肚，木耳，咸肉，白玉菇，冬笋片，毛豆米",
         image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=500&q=80"
     },
 
