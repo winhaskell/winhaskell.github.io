@@ -122,20 +122,20 @@ const menuData = [
     },
     {
         id: 14,
-        name: "菌菇素炒饭",
+        name: "啤酒",
         category: "vegetable",
         price: 28,
-        description: "香菇、平菇、金针菇三菇组合，鲜美营养",
-        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&q=80",
+        description: "沁心啤酒，纯属生活",
+        image: "img/beer_0.jpg",
         badge: "new"
     },
     {
         id: 15,
-        name: "番茄鸡蛋炒饭",
+        name: "毛铺苦荞酒",
         category: "vegetable",
         price: 26,
-        description: "经典家常组合，酸甜可口，老少皆宜",
-        image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500&q=80",
+        description: "荞韵流芳匠心酿，劲享品质毛铺香",
+        image: "img/kuqiaojiu.jpg",
         hot: true
     },
     {
