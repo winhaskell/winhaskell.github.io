@@ -72,16 +72,16 @@ const menuData = [
     // 肉类系列
     {
         id: 8,
-        name: "黑椒牛肉炒饭",
+        name: "酱爆鱿鱼炒面",
         category: "meat",
-        price: 36,
-        description: "精选牛里脊，搭配黑椒酱，肉质鲜嫩，香辣开胃",
-        image: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?w=500&q=80",
+        price: 32,
+        description: "鱿鱼，青彩椒，红彩椒，葱，盐，油",
+        image: "img/youyuchaom.jpg",
         hot: true
     },
     {
         id: 9,
-        name: "叉烧炒饭",
+        name: "六鲜炒面",
         category: "meat",
         price: 33,
         description: "广式叉烧搭配炒饭，甜咸适中，经典粤式风味",
@@ -89,26 +89,26 @@ const menuData = [
     },
     {
         id: 10,
-        name: "腊肠炒饭",
+        name: "酸菜肥肠炒面",
         category: "meat",
-        price: 30,
+        price: 32,
         description: "精选广式腊肠，油脂丰富，香气扑鼻，家的味道",
         image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80"
     },
     {
         id: 11,
-        name: "培根芝士炒饭",
+        name: "盐水鸭炒面",
         category: "meat",
-        price: 35,
+        price: 30,
         description: "西式培根配芝士，创意融合，奶香浓郁",
         image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500&q=80",
         badge: "new"
     },
     {
         id: 12,
-        name: "鸡肉菌菇炒饭",
+        name: "狮子头炒面",
         category: "meat",
-        price: 32,
+        price: 22,
         description: "嫩滑鸡肉配香菇、平菇，营养搭配，清香可口",
         image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=80"
     },
