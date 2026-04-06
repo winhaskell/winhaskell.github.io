@@ -66,7 +66,7 @@ const menuData = [
         category: "seafood",
         price: 21,
         description: "皮肚，木耳，咸肉，白玉菇，冬笋片，毛豆米",
-        image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=500&q=80"
+        image: "img/pidusxt.jpg"
     },
 
     // 肉类系列
