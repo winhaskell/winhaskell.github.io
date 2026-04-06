@@ -140,11 +140,11 @@ const menuData = [
     },
     {
         id: 16,
-        name: "玉米青豆炒饭",
+        name: "北冰洋汽水",
         category: "vegetable",
         price: 24,
-        description: "甜玉米配青豆，清新爽口，适合儿童",
-        image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=80"
+        description: "一口爽到北冰洋",
+        image: "img/bbyqs.jpg"
     }
 ];
 
