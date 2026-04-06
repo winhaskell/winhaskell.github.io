@@ -43,20 +43,21 @@ const menuData = [
     },
     {
         id: 5,
-        name: "冬瓜排骨汤",
-        category: "seafood",
-        price: 28,
-        description: "冬瓜，排骨，香油、葱、姜、花椒、食盐、味精各适量",
-        image: "img/dgpgt.jpg"
-        badge: "new"
-    },
-    {
-        id: 6,
         name: "青菜豆腐汤",
         category: "seafood",
         price: 16,
         description: "青菜、豆腐、食用油、盐",
-        image: "img/qcdft.jpg",
+        image: "img/qcdft.jpg"
+        
+    },
+    {
+        id: 6,
+        name: "冬瓜排骨汤",
+        category: "seafood",
+        price: 28,
+        description: "冬瓜，排骨，香油、葱、姜、花椒、食盐、味精各适量",
+        image: "img/dgpgt.jpg",
+        badge: "new"
         
     },
     {
