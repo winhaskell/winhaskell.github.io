@@ -43,11 +43,11 @@ const menuData = [
     },
     {
         id: 5,
-        name: "虾仁蛋炒饭",
+        name: "冬瓜排骨汤",
         category: "seafood",
         price: 38,
-        description: "Q弹虾仁配嫩滑鸡蛋，清淡鲜香，营养丰富",
-        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80"
+        description: "冬瓜，排骨，香油、葱、姜、花椒、食盐、味精各适量",
+        image: "img/dgpgt.jpg"
     },
     {
         id: 6,
