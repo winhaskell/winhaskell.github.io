@@ -48,15 +48,16 @@ const menuData = [
         price: 28,
         description: "冬瓜，排骨，香油、葱、姜、花椒、食盐、味精各适量",
         image: "img/dgpgt.jpg"
+        badge: "new"
     },
     {
         id: 6,
-        name: "鱿鱼墨鱼炒饭",
+        name: "青菜豆腐汤",
         category: "seafood",
-        price: 42,
-        description: "新鲜鱿鱼和墨鱼，口感劲道，海洋风味浓郁",
-        image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=80",
-        badge: "new"
+        price: 16,
+        description: "青菜、豆腐、食用油、盐",
+        image: "img/qcdft.jpg",
+        
     },
     {
         id: 7,
