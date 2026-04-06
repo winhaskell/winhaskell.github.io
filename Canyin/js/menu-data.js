@@ -36,7 +36,7 @@ const menuData = [
         id: 4,
         name: "鸭血粉丝汤",
         category: "seafood",
-        price: 45,
+        price: 22,
         description: "鸭血，粉丝，鸭杂，油豆腐，香菜，葱花",
         image: "img/yxfst.jpg",
         badge: "hot"
@@ -45,7 +45,7 @@ const menuData = [
         id: 5,
         name: "冬瓜排骨汤",
         category: "seafood",
-        price: 38,
+        price: 28,
         description: "冬瓜，排骨，香油、葱、姜、花椒、食盐、味精各适量",
         image: "img/dgpgt.jpg"
     },
