@@ -142,7 +142,7 @@ const menuData = [
         id: 16,
         name: "北冰洋汽水",
         category: "vegetable",
-        price: 24,
+        price: 3,
         description: "一口爽到北冰洋",
         image: "img/bbyqs.jpg"
     }
