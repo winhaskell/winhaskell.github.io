@@ -92,8 +92,8 @@ const menuData = [
         name: "酸菜肥肠炒面",
         category: "meat",
         price: 32,
-        description: "精选广式腊肠，油脂丰富，香气扑鼻，家的味道",
-        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=500&q=80"
+        description: "酸菜、卤肥肠、面条、鸡蛋，配蒜末与葱花大火翻炒",
+        image: "img/scfccm.jpg"
     },
     {
         id: 11,
