@@ -7,7 +7,7 @@ const menuData = [
         category: "signature",
         price: 30,
         description: "招牌必点！选用优质大米，搭配新鲜鸡蛋，粒粒分明，金黄诱人",
-        image: "img/bg-1.png",
+        image: "img/wucaixrcf-1.jpg",
         badge: "signature",
         hot: true
     },
