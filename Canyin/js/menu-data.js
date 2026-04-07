@@ -84,8 +84,8 @@ const menuData = [
         name: "六鲜炒面",
         category: "meat",
         price: 33,
-        description: "广式叉烧搭配炒饭，甜咸适中，经典粤式风味",
-        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&q=80"
+        description: "面条配虾仁、香肠、鸡蛋、时蔬六鲜合炒，口味鲜美",
+        image: "img/liuxianmian.jpg"
     },
     {
         id: 10,
