@@ -101,7 +101,7 @@ const menuData = [
         category: "meat",
         price: 22,
         description: "狮子头、面条、鸡蛋，香葱，创意融合",
-        image: "img/scfccm.jpg",
+        image: "img/shizitchmian.jpg",
         badge: "new"
     },
     {
