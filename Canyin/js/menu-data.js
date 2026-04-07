@@ -97,20 +97,20 @@ const menuData = [
     },
     {
         id: 11,
-        name: "盐水鸭炒面",
+        name: "狮子头炒面",
         category: "meat",
-        price: 30,
-        description: "西式培根配芝士，创意融合，奶香浓郁",
-        image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=500&q=80",
+        price: 22,
+        description: "狮子头、面条、鸡蛋，香葱，创意融合",
+        image: "img/scfccm.jpg",
         badge: "new"
     },
     {
         id: 12,
-        name: "狮子头炒面",
+        name: "香菇青菜炒面",
         category: "meat",
-        price: 22,
-        description: "嫩滑鸡肉配香菇、平菇，营养搭配，清香可口",
-        image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=500&q=80"
+        price: 18,
+        description: "面条，鸡蛋，香菇，小青菜，香葱",
+        image: "img/xianggusumian.jpg"
     },
 
     // 素菜系列-饮料啤酒
