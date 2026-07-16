@@ -3,10 +3,10 @@ const menuData = [
     // 招牌系列
     {
         id: 1,
-        name: "五彩虾仁炒饭",
+        name: "红烧肉炒饭",
         category: "signature",
-        price: 30,
-        description: "招牌必点！选用优质大米，搭配新鲜鸡蛋，粒粒分明，金黄诱人",
+        price: 28,
+        description: "米饭、红烧五花肉、鸡蛋、青葱、胡萝卜、洋葱、秘制酱汁",
         image: "img/wucaixrcf-1.jpg",
         badge: "signature",
         hot: true
@@ -25,7 +25,7 @@ const menuData = [
         id: 3,
         name: "招牌六鲜炒饭",
         category: "signature",
-        price: 33,
+        price: 32,
         description: "甄选虾仁、鸡蛋、火腿、青豆、玉米与香菇，大火快炒，粒粒分明、鲜香浓郁",
         image: "img/liuxianchfan.jpg",
         badge: "signature"
