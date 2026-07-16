@@ -7,7 +7,7 @@ const menuData = [
         category: "signature",
         price: 28,
         description: "米饭、红烧五花肉、鸡蛋、青葱、胡萝卜、洋葱、秘制酱汁",
-        image: "img/wucaixrcf-1.jpg",
+        image: "img/hsrcf.jpg",
         badge: "signature",
         hot: true
     },
