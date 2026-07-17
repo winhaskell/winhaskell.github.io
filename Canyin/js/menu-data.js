@@ -43,11 +43,11 @@ const menuData = [
     },
     {
         id: 5,
-        name: "青菜豆腐汤",
+        name: "青菜肉圆汤",
         category: "seafood",
-        price: 16,
-        description: "青菜，豆腐，食用油，盐",
-        image: "img/qcdft.jpg"
+        price: 26,
+        description: "新鲜青菜、手工肉圆、葱花、姜丝、食盐",
+        image: "img/qcryt.jpg"
         
     },
     {
