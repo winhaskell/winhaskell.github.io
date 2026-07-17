@@ -64,7 +64,7 @@ const menuData = [
         id: 7,
         name: "皮肚三鲜汤",
         category: "seafood",
-        price: 21,
+        price: 20,
         description: "皮肚，木耳，咸肉，菇，笋片，毛豆米",
         image: "img/pidusxt.jpg"
     },
