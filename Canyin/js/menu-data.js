@@ -75,7 +75,7 @@ const menuData = [
         name: "酱爆鱿鱼炒面/河粉",
         category: "meat",
         price: 32,
-        description: "鱿鱼、青彩椒、红彩椒、葱",
+        description: "鱿鱼、青彩椒、红彩椒、鸡蛋、面条、葱",
         image: "img/youyuchaom.jpg",
         hot: true
     },
@@ -84,7 +84,7 @@ const menuData = [
         name: "招牌六鲜炒面/河粉",
         category: "meat",
         price: 32,
-        description: "面条配虾仁、香肠、鸡蛋、时蔬六鲜合炒，口味鲜美",
+        description: "虾仁、香肠、鸡蛋、面条、时蔬",
         image: "img/liuxianmian.jpg"
     },
     {
@@ -92,7 +92,7 @@ const menuData = [
         name: "酸菜肥肠炒面/河粉",
         category: "meat",
         price: 30,
-        description: "酸菜、卤肥肠、面条、鸡蛋，配蒜末与葱花大火翻炒",
+        description: "卤肥肠、酸菜、面条、鸡蛋、蒜末、葱花",
         image: "img/scfccm.jpg"
     },
     {
@@ -100,7 +100,7 @@ const menuData = [
         name: "五彩虾仁炒面/河粉",
         category: "meat",
         price: 28,
-        description: "鲜嫩虾仁、搭配胡萝卜、玉米粒、青豆、彩椒",
+        description: "鲜嫩虾仁、搭配胡萝卜、鸡蛋、面条、青豆、彩椒",
         image: "img/wucxrcm.jpg",
         badge: "new"
     },
