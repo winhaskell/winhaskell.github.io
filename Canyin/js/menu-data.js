@@ -72,7 +72,7 @@ const menuData = [
     // 肉类系列
     {
         id: 8,
-        name: "酱爆鱿鱼炒面",
+        name: "酱爆鱿鱼炒面/河粉",
         category: "meat",
         price: 32,
         description: "鱿鱼，青彩椒，红彩椒，葱，盐，油",
@@ -81,32 +81,32 @@ const menuData = [
     },
     {
         id: 9,
-        name: "六鲜炒面",
+        name: "招牌六鲜炒面/河粉",
         category: "meat",
-        price: 33,
+        price: 32,
         description: "面条配虾仁、香肠、鸡蛋、时蔬六鲜合炒，口味鲜美",
         image: "img/liuxianmian.jpg"
     },
     {
         id: 10,
-        name: "酸菜肥肠炒面",
+        name: "酸菜肥肠炒面/河粉",
         category: "meat",
-        price: 32,
+        price: 30,
         description: "酸菜、卤肥肠、面条、鸡蛋，配蒜末与葱花大火翻炒",
         image: "img/scfccm.jpg"
     },
     {
         id: 11,
-        name: "狮子头炒面",
+        name: "五彩虾仁炒面/河粉",
         category: "meat",
-        price: 22,
+        price: 28,
         description: "狮子头、面条、鸡蛋，香葱，创意融合",
-        image: "img/shizitchmian.jpg",
+        image: "img/wucxrcm.jpg",
         badge: "new"
     },
     {
         id: 12,
-        name: "香菇青菜炒面",
+        name: "香菇青菜炒面/河粉",
         category: "meat",
         price: 18,
         description: "面条，鸡蛋，香菇，小青菜，香葱",
