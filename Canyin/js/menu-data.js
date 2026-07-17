@@ -133,11 +133,11 @@ const menuData = [
     },
     {
         id: 15,
-        name: "毛铺苦荞酒",
+        name: "青椒肉丝盖浇饭",
         category: "vegetable",
-        price: 26,
-        description: "荞韵流芳匠心酿、劲享品质毛铺香",
-        image: "img/kuqiaojiu.jpg",
+        price: 23,
+        description: "肉丝、青椒、洋葱、蒜末、优质米饭",
+        image: "img/qjrsgjf.jpg",
         hot: true
     },
     {
