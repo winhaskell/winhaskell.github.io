@@ -116,19 +116,19 @@ const menuData = [
     // 素菜系列-饮料啤酒
     {
         id: 13,
-        name: "雪碧可乐",
+        name: "招牌肥肠面",
         category: "vegetable",
-        price: 4,
-        description: "透心凉、渴释放",
-        image: "img/cola.jpg"
+        price: 30,
+        description: "卤肥肠、面条、青菜、葱花、香菜、高汤",
+        image: "img/zpfcm.jpg"
     },
     {
         id: 14,
-        name: "啤酒",
+        name: "金陵皮肚面",
         category: "vegetable",
         price: 28,
-        description: "沁心啤酒、纯属生活",
-        image: "img/beer_0.jpg",
+        description: "皮肚、猪肝、肉丝、西红柿、青菜、高汤、葱花",
+        image: "img/pidum.jpg",
         badge: "new"
     },
     {
@@ -142,9 +142,9 @@ const menuData = [
     },
     {
         id: 16,
-        name: "北冰洋汽水/可乐/雪碧",
+        name: "北冰洋汽水/可乐/雪碧/啤酒",
         category: "vegetable",
-        price: 3/4,
+        price: 3-28,
         description: "一口爽到北冰洋、透心凉、渴释放",
         image: "img/bbykele.jpg"
     }
