@@ -142,11 +142,11 @@ const menuData = [
     },
     {
         id: 16,
-        name: "北冰洋汽水",
+        name: "北冰洋汽水/可乐/雪碧",
         category: "vegetable",
-        price: 3,
-        description: "一口爽到北冰洋",
-        image: "img/bbyqs.jpg"
+        price: 3/4,
+        description: "一口爽到北冰洋、透心凉、渴释放",
+        image: "img/bbykele.jpg"
     }
 ];
 
