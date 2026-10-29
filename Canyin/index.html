@@ -729,18 +729,98 @@
 
 
 
-                <div style="display: flex; gap: 16px; align-items: flex-start; justify-content: flex-start;">
-  <!-- 第一张图片：在此扫码付款 -->
-  <img src="img/images-z1.jpg" style="width: auto; height: auto; max-width: 100%; display: block;" alt="在此扫码付款">
   
-  <!-- 第二张图片：支付宝二维码 -->
-  <img src="img/images-z2.jpg" style="width: auto; height: auto; max-width: 100%; display: block;" alt="支付宝二维码">
-</div>
+  
+  
 
 
 
+                <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收银支付中心</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f8f9fa; /* 优雅的浅灰底色，烘托主体 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
 
+        /* 全屏水平垂直居中容器 */
+        .pay-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 20px;
+        }
 
+        /* 支付卡片网格布局：支持移动端自动换行，大屏完美并排 */
+        .pay-container {
+            display: flex;
+            flex-wrap: wrap; /* 核心：屏幕太窄时自动安全换行，防止切边 */
+            gap: 24px;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        /* UX 优化：将带有拍照毛边的原图卡片化封装 */
+        .qr-card {
+            background: #ffffff;
+            padding: 12px;
+            border-radius: 16px; /* 圆角，中和拍照的凌乱感 */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); /* 柔和的高级阴影 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+
+        .qr-card:hover {
+            transform: translateY(-2px); /* 鼠标悬停微动特效 */
+        }
+
+        /* 核心图片控制：不放大，但通过统一最大高度实现视觉平准 */
+        .qr-card img {
+            display: block;
+            width: auto;
+            /* 关键点：限制最大高度为 280px。
+               这样既保证了在任何屏幕上都不会被放大失真，
+               又让两张原本高矮不一的照片在视觉上达到了完美的平衡！ */
+            height: auto;
+            max-height: 280px; 
+            max-width: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pay-wrapper">
+        <div class="pay-container">
+            <!-- 收钱吧卡片 -->
+            <div class="qr-card">
+                <img src="img/images-z1.jpg" alt="收钱吧微信">
+            </div>
+            
+            <!-- 支付宝卡片 -->
+            <div class="qr-card">
+                <img src="img/images-z2.jpg" alt="支付宝支付">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 
          
    
